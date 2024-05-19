@@ -1,0 +1,26 @@
+PatientID,Diag_Date,Prediction_Point,Variable_Category,Variable_Name,Date_of_Test,Value_of_Test,Units_of_Test
+High-Risk Example 1,09-04-09,09-07-09,Baseline,Binet Stage,09-04-09,C,NA
+High-Risk Example 1,09-04-09,09-07-09,Baseline,IGHV_unmut,09-04-09,Unmutated,NA
+High-Risk Example 1,09-04-09,09-07-09,Baseline,ECOG,09-04-09,2,NA
+High-Risk Example 1,09-04-09,09-07-09,Baseline,Age,09-04-09,71,NA
+High-Risk Example 1,09-04-09,09-07-09,Baseline,FamCLL,09-04-09,No,NA
+High-Risk Example 1,09-04-09,09-07-09,Baseline,Beta2m,09-04-09,NA,NA
+High-Risk Example 1,09-04-09,09-07-09,Baseline,CD38,09-04-09,Yes,NA
+High-Risk Example 1,09-04-09,09-07-09,Baseline,ZAP70,09-04-09,Yes,NA
+High-Risk Example 1,09-04-09,09-07-09,Baseline,Gender,09-04-09,Male,NA
+High-Risk Example 1,09-04-09,09-07-09,Baseline,del13,09-04-09,No,NA
+High-Risk Example 1,09-04-09,09-07-09,Baseline,tri12,09-04-09,No,NA
+High-Risk Example 1,09-04-09,09-07-09,Baseline,del11,09-04-09,Yes,NA
+High-Risk Example 1,09-04-09,09-07-09,Baseline,del17,09-04-09,0,NA
+High-Risk Example 1,09-04-09,09-07-09,Lab,HAEM,25-06-09,5.893547434,NA
+High-Risk Example 1,09-04-09,09-07-09,Lab,LEUK,19-03-09,13.5924668,NA
+High-Risk Example 1,09-04-09,09-07-09,Lab,ALB,19-03-09,42.99388421,NA
+High-Risk Example 1,09-04-09,09-07-09,Lab,HAEM,19-03-09,6.098859467,NA
+High-Risk Example 1,09-04-09,09-07-09,Lab,AMY,19-03-09,25.99941386,NA
+High-Risk Example 1,09-04-09,09-07-09,Lab,LEUK,25-06-09,16.4913695,NA
+High-Risk Example 1,09-04-09,09-07-09,Lab,ALP,19-03-09,79.99051928,NA
+High-Risk Example 1,09-04-09,09-07-09,Lab,THR,25-06-09,143.9904217,NA
+High-Risk Example 1,09-04-09,09-07-09,Lab,LDH,19-03-09,183.9922443,NA
+High-Risk Example 1,09-04-09,09-07-09,Lab,THR,19-03-09,170.9995682,NA
+High-Risk Example 1,09-04-09,09-07-09,Lab,INR,19-03-09,0.894358625,NA
+High-Risk Example 1,09-04-09,09-07-09,Lab,TRANS,19-03-09,30.79751638,NA
