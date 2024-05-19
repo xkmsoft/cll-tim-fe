@@ -4,7 +4,7 @@
 
       <h5 class="text-primary text-center m-2 p-2">CLL-TIM Data Input Form</h5>
 
-      <h5 class="text-primary m-2 p-2">How to Use</h5>
+      <h5 class="text-primary m-2 p-2">How to Use?</h5>
       <p class="text-justify m-2 p-2">
         Please fill in any patient data available for CLL-TIM to make its prediction. CLL-TIM is designed to work with
         missing values, so you are not required to enter all the requested patient information. For confident predictions,
@@ -18,6 +18,7 @@
 
       <form @submit.prevent="generatePrediction" id="diagnosis-form" action="#" method="post">
 
+        <!-- Diagnosis and prediction dates -->
         <fieldset class="baseline-border m-2 p-2">
           <legend class="baseline-border text-muted">Diagnosis Date</legend>
           <div class="form-group form-row m-2 p-2">
@@ -34,6 +35,7 @@
           </div>
         </fieldset>
 
+        <!-- Patient details -->
         <fieldset class="baseline-border m-2 p-2">
           <legend class="baseline-border text-muted">Patient Details</legend>
           <div class="form-group form-row m-2 p-2">
@@ -60,6 +62,7 @@
           </div>
         </fieldset>
 
+        <!-- BaseLine -->
         <fieldset class="baseline-border m-2 p-2">
           <legend class="baseline-border text-muted">BaseLine</legend>
           <div class="form-group form-row m-2 p-2">
@@ -77,7 +80,7 @@
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
               <label class="col-form-label text-nowrap text-primary diagnosis-form-label" for="ighv_unmut">IGHV mutational status</label>
               <select v-model="ighv_unmut" class="form-control" id="ighv_unmut" name="ighv_unmut">
-                <option value="Mutated">Mutated status (Germline identity < 98%)</option>
+                <option value="Mutated">Mutated status (Germline identity &lt; 98%)</option>
                 <option value="Unmutated">Unmutated status</option>
                 <option value="NA">NA</option>
               </select>
@@ -179,6 +182,7 @@
           </div>
         </fieldset>
 
+        <!-- Routine Lab Tests -->
         <fieldset class="baseline-border m-2 p-2">
           <legend class="baseline-border text-muted">Routine Lab Test Variables</legend>
 
@@ -280,6 +284,7 @@
 
         </fieldset>
 
+        <!-- Blood cultures -->
         <fieldset class="baseline-border m-2 p-2">
           <legend class="baseline-border text-muted">Bloodculture</legend>
 
@@ -326,6 +331,7 @@
           </div>
         </fieldset>
 
+        <!-- Pathology -->
         <fieldset class="baseline-border m-2 p-2">
           <legend class="baseline-border text-muted">Pathology</legend>
 
@@ -373,21 +379,20 @@
         </fieldset>
 
         <div class="form-group form-row m-2 p-2">
-          <div id="response" class="col">
-            <p id="phase-text" class="text-primary text-center m-2 p-2" style="display: none;"></p>
-            <div id="progress-div" class="progress" style="display: none;"><div id="phase-progress" class="progress-bar" role="progressbar" style="width:0%"></div></div>
-            <div id="report" style="display: none"></div>
-          </div>
-        </div>
-
-        <div class="form-group form-row m-2 p-2">
           <div class="col-sm-10">
-            <button id="confirm-button" type="submit" class="btn btn-primary">Generate Prediction</button>
-            <div id="processing-spinner" class="spinner-grow spinner-grow-sm ml-2" role="status" style="display: none;"><span class="sr-only">Processing...</span></div>
+            <button type="submit" class="btn btn-primary">Generate Prediction</button>
           </div>
         </div>
 
       </form>
+
+      <Teleport to="body">
+        <CLLTIMModal :show="showModal" @close="showModal = false">
+          <template #header>
+            <h3>CLL-TIM Prediction</h3>
+          </template>
+        </CLLTIMModal>
+      </Teleport>
 
     </div>
   </main>
@@ -403,6 +408,7 @@ import {
   faRemove,
   faVial
 } from '@fortawesome/free-solid-svg-icons'
+import CLLTIMModal from '@/components/CLLTIMModal.vue'
 
 const currentTime = () => {
   const today = new Date();
@@ -449,7 +455,10 @@ const labTests = ref([])
 const bloodCultureTests = ref([])
 const pathologies = ref([])
 
+// Modal
+const showModal = ref(false)
 
+// Function for new tests
 const newLabTest = () => {
   return {
     "labDate": "",
@@ -578,6 +587,7 @@ function generatePrediction() {
     "pathology": pathologies.value
   }
   console.dir(diagnosisData)
+  showModal.value = true
 }
 
 </script>

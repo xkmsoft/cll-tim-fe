@@ -34,31 +34,31 @@
       <ul>
         <li>
           <p class="text-justify m-2 p-2">
-            <a href="templates/CLLTIM_DataInput.xlsx">CLL-TIM Data Input Format</a>
+            <a href="/templates/CLLTIM_DataInput.xlsx">CLL-TIM Data Input Format</a>
           </p>
         </li>
         <li><p class="text-justify m-2 p-2">
-          <a href="templates/High-Risk-Example-1.csv">CLL-TIM High Risk Patient Example 1</a>
+          <a href="/templates/High-Risk-Example-1.csv">CLL-TIM High Risk Patient Example 1</a>
         </p>
         </li>
         <li><p class="text-justify m-2 p-2">
-          <a href="templates/High-Risk-Example-2.csv">CLL-TIM High Risk Patient Example 2</a>
+          <a href="/templates/High-Risk-Example-2.csv">CLL-TIM High Risk Patient Example 2</a>
         </p>
         </li>
         <li><p class="text-justify m-2 p-2">
-          <a href="templates/High-Risk-Example-3.csv">CLL-TIM High Risk Patient Example 3</a>
+          <a href="/templates/High-Risk-Example-3.csv">CLL-TIM High Risk Patient Example 3</a>
         </p>
         </li>
         <li><p class="text-justify m-2 p-2">
-          <a href="templates/Low-Risk-Example-1.csv">CLL-TIM Low Risk Patient Example 1</a>
+          <a href="/templates/Low-Risk-Example-1.csv">CLL-TIM Low Risk Patient Example 1</a>
         </p>
         </li>
         <li><p class="text-justify m-2 p-2">
-          <a href="templates/Low-Risk-Example-2.csv">CLL-TIM Low Risk Patient Example 2</a>
+          <a href="/templates/Low-Risk-Example-2.csv">CLL-TIM Low Risk Patient Example 2</a>
         </p>
         </li>
         <li><p class="text-justify m-2 p-2">
-          <a href="templates/Low-Risk-Example-3.csv">CLL-TIM Low Risk Patient Example 3</a>
+          <a href="/templates/Low-Risk-Example-3.csv">CLL-TIM Low Risk Patient Example 3</a>
         </p>
         </li>
       </ul>
