@@ -410,7 +410,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import CLLTIMModal from '@/components/CLLTIMModal.vue'
 
-const currentTime = () => {
+const getCurrentDate = () => {
   const today = new Date();
   const yyyy = today.getFullYear();
   let mm = today.getMonth() + 1;
@@ -426,8 +426,8 @@ const NA = "NA"
 const defaultAge = 65
 const defaultGender = "Male"
 
-const diagnosisDate = ref(currentTime())
-const predictionDate = ref(currentTime())
+const diagnosisDate = ref(getCurrentDate())
+const predictionDate = ref(getCurrentDate())
 const patientId = ref('')
 const gender = ref(defaultGender)
 const age = ref(defaultAge)
@@ -461,7 +461,7 @@ const showModal = ref(false)
 // Function for new tests
 const newLabTest = () => {
   return {
-    "labDate": "",
+    "labDate": getCurrentDate(),
     "beta2m": NA,
     "haem": NA,
     "aec": NA,
@@ -500,16 +500,16 @@ const newLabTest = () => {
 
 const newBloodCulture = () => {
   return {
-    "infecDate": "",
+    "infecDate": getCurrentDate(),
     "infec": NA,
   }
 }
 
 const newPathology = () => {
   return {
-    "inflamDate": "",
+    "inflamDate": getCurrentDate(),
     "inflam": NA,
-    "rarePathDate": "",
+    "rarePathDate": getCurrentDate(),
     "rarePath": NA,
   }
 }
