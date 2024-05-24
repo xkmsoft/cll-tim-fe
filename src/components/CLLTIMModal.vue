@@ -9,7 +9,7 @@
         <div class="modal-body">
           <slot name="body">
             <div class="container">
-              <p>This site is a showcase of CLL-TIM. To run a prediction please send an email to <a href="mailto:rudi.agius@regionh.dk">rudi.agius@regionh.dk</a></p>
+              <p>This site is a showcase of CLL-TIM. To run a prediction please send an email to <a href="mailto:rudi.agius.01@regionh.dk">rudi.agius.01@regionh.dk</a></p>
             </div>
           </slot>
         </div>

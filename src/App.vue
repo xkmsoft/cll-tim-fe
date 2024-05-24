@@ -18,7 +18,7 @@
             </RouterLink>
           </li>
         </ul>
-        <span class="badge bg-light text-dark">Contact: <a href="mailto:rudi.agius@regionh.dk">rudi.agius@regionh.dk</a></span>
+        <span class="badge bg-light text-dark">Contact: <a href="mailto:rudi.agius.01@regionh.dk">rudi.agius.01@regionh.dk</a></span>
       </div>
     </div>
   </nav>
